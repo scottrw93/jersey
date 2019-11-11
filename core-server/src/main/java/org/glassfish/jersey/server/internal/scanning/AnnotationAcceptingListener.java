@@ -55,14 +55,13 @@ import javax.ws.rs.ext.Provider;
 import org.glassfish.jersey.internal.OsgiRegistry;
 import org.glassfish.jersey.internal.util.ReflectionHelper;
 import org.glassfish.jersey.server.internal.LocalizationMessages;
-
-import jersey.repackaged.org.objectweb.asm.AnnotationVisitor;
-import jersey.repackaged.org.objectweb.asm.Attribute;
-import jersey.repackaged.org.objectweb.asm.ClassReader;
-import jersey.repackaged.org.objectweb.asm.ClassVisitor;
-import jersey.repackaged.org.objectweb.asm.FieldVisitor;
-import jersey.repackaged.org.objectweb.asm.MethodVisitor;
-import jersey.repackaged.org.objectweb.asm.Opcodes;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 /**
  * A scanner listener that processes Java class files (resource names
