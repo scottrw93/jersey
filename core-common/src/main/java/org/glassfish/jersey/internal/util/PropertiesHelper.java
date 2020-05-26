@@ -252,6 +252,9 @@ public final class PropertiesHelper {
             value = getLegacyFallbackValue(properties, legacyMap, key);
         }
         if (value == null) {
+            value = getSystemProperty(key).run();
+        }
+        if (value == null) {
             return null;
         }
 
