@@ -51,7 +51,7 @@
 
     <groupId>org.glassfish.jersey.core</groupId>
     <artifactId>jersey-server</artifactId>
-    <version>2.25.1-hubspot-SNAPSHOT</version>
+    <version>2.25.1-hubspot-jacob-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>jersey-core-server</name>
 
