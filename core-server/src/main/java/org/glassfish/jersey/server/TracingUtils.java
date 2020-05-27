@@ -45,6 +45,7 @@ import javax.ws.rs.core.Configuration;
 import javax.ws.rs.core.HttpHeaders;
 
 import org.glassfish.jersey.message.internal.TracingLogger;
+import org.glassfish.jersey.message.internal.TracingLogger.Level;
 import org.glassfish.jersey.server.internal.ServerTraceEvent;
 
 import jersey.repackaged.com.google.common.collect.Lists;
@@ -159,7 +160,7 @@ public final class TracingUtils {
         } else {
             result = DEFAULT_CONFIGURATION_TYPE;
         }
-        return result;
+        return TracingConfig.ALL;
     }
 
     /**
@@ -184,7 +185,7 @@ public final class TracingUtils {
                 configuration.getProperties(),
                 ServerProperties.TRACING_THRESHOLD, String.class);
 
-        return (thresholdText == null) ? TracingLogger.DEFAULT_LEVEL : TracingLogger.Level.valueOf(thresholdText);
+        return Level.VERBOSE;
     }
 
     private static TracingLogger.Level getTracingThreshold(TracingLogger.Level appThreshold, ContainerRequest containerRequest) {

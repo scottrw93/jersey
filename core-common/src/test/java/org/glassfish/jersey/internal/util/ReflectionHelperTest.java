@@ -39,17 +39,15 @@
  */
 package org.glassfish.jersey.internal.util;
 
-import java.lang.reflect.Method;
-import java.security.AccessControlException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-
-import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+
+import java.lang.reflect.Method;
+import java.security.PrivilegedAction;
+
+import org.junit.Test;
 
 /**
  * {@code ReflectionHelper} unit tests.
