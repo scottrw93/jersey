@@ -267,10 +267,6 @@ public abstract class TracingLogger {
 
         @Override
         public void flush(final MultivaluedMap<String, Object> headers) {
-            final String[] messages = tracingInfo.getMessages();
-            for (int i = 0; i < messages.length; i++) {
-                headers.putSingle(String.format(TracingLogger.HEADER_RESPONSE_FORMAT, i), messages[i]);
-            }
         }
 
         /**
