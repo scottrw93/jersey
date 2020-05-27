@@ -8,4 +8,4 @@ enabled: true
 
 env:
   MAVEN_OPTS: -Xmx768m
-  SKIP_VERSION_OVERRIDE_ON_BRANCH: 2.25.1-hubspot-jacob
+  SKIP_VERSION_OVERRIDE_ON_BRANCH: 2.25.1-hubspot
